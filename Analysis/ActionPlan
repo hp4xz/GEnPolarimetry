@@ -1,0 +1,58 @@
+Wishlist before we take out Hunter (Not much was completed before he was murdered :(  )
+----------------------------------------------------------------------------------------------------------------------------------
+#1 Polarization Gradient Understanding
+
+Take NMR at many different convection settings and compare to setting with no polarization gradient.
+20.5 Hour test
+
+Convection 18V - wait 30 minutes
+- NMR every hour for 4 hours
+Convection 15V
+- NMR every hour for 4 hours
+Convection 12V
+- NMR every hour for 4 hours
+Convection 9V
+- NMR every hour for 4 hours
+Convection 6V
+- NMR every hour for 4 hours
+
+#2 Lasers On/Off Test
+
+To get a handle and temperatures, Laser on/off test for each cell should be completed.
+
+#3 Ambient temperature NMR's
+
+#4 We need to perform an analysis along the lines of what I show above for every set of
+runs during which we have NMR measurements.
+
+-How do I access list of all runs?
+
+#6 We need to generate a table of polarization values for every run.
+
+#7 We need to enumerate and understand any number of other systematic effects not
+discussed here. For example, how do afp losses affect the polarizations that we assign
+to each run?
+
+-Target ladder motion for NMR
+-I suggest doing EPR in the target position and looking at the pumping chamber difference
+
+#8 What have I forgotten that needs to be done BEFORE wrapping up data taking for
+Kin3?
+
+Analysis
+----------------------------------------------------------------------------------------------------------------------------------
+*LoadNMR - Takes all NMR Data and two dates. Fits data in between two dates. Spits out text and array.
+
+*CalibrateNMRFits - Takes an EPR date, two NMR dates, and calibration constant(%/khz) and returns calibration as well as temperatures for each NMR during calibration
+
+*ReadEpics - Takes csv's gotten from WAVE online plotter and produces array of all temperatures and dates throughout the run
+
+*LoadEPR - Takes all EPR and NMR data and produces array of all calibrations carried out with all temperatures and dates.
+
+*FitRatios - Looks at ratios of my fits to the fits produced by the vi. Interestingly not constant.
+
+*SweepRatios - Looks at pumping chamber ratios to target chamber with my fits. Interesting distributions indicate different settings
+
+*Analysis - Starts by reproducing Gordon's analysis, but with my fits. Then I try my analysis using exact RTD readouts for each NMR.
+
+*functions.py - all the functions I use throughout multiple scripts

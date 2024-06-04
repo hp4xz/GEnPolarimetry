@@ -1,0 +1,27 @@
+NMR Settings:
+--
+Target Type:	He
+--
+Holding Field (G):	20.958423
+Theta (degree):	90.000000
+Phi (degree):	64.160487
+High Field (G):	28.000000
+Sweep Speed (G/s):	4.000000
+Sit Time (s):	0.000000
+RF Frequency (kHz):	91.000000
+RF Power (Vrms):	0.200000
+--
+Start Time:	2023/02/01 09:55:57
+Finish Time:	2023/02/01 09:55:57
+Wait Time (m):	120.000000
+Number of Sweeps:	1
+--
+Lockin Sensitivity:	12
+Time Constant:	4
+Phase (degree):	105.000000
+Sample Rate:	11
+TC Filter:	4
+Wide Reserve:	2
+Close Reserve:	2
+--
+Error Message:	
